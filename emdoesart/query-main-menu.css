@@ -1,0 +1,104 @@
+/* Styling main menu for non-desktop screen sizes */
+
+/* Reduced menu design*/
+.mobilemenu-cont {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    
+}
+
+.menu-button {
+    display: flex;
+}
+
+.flex-menu-choices {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dropbtn-menu {
+  color: #5b164d;
+  background-color: #FFF5FC;
+  border-color: #5b164d4b;
+  padding: 14px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "NovaMono", monospace;
+  margin-bottom: 2px;
+  transition-duration: 0.4s;
+}
+
+.flex-menu-content {
+    display: none;
+    background-color: #FFFDEB;
+    position: absolute;
+    min-width: 160px;
+    margin: 3 0 2 0;
+    padding: 0 0 0 0;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flex-menu-content a {
+    color: black;
+    padding: 21px 16px;
+    text-decoration: none;
+    display: flex;
+    flex: 1 1 10em;
+    border-left: #5b164d1a solid 1px;
+    border-right: #5b164d1a solid 1px;
+}
+
+
+/* Actions */
+.mobilemenu-cont .flex-menu-content a:hover {background-color: #ae068c4b; display: flex; color: #5b164d; font-weight: bold;}
+
+.mobilemenu-cont:hover .flex-menu-content {display: flex; flex-direction: row;}
+
+.mobilemenu-cont:hover .dropbtn-menu {background-color: #5f064d4b; color: white; text-shadow: 2px 0 #5b164d, -2px 0 #5b164d, 0 2px #5b164d, 0 -2px #5b164d,
+    1px 1px #5b164d, -1px -1px #5b164d, 1px -1px #5b164d, -1px 1px #5b164d;}
+
+
+/* MEDIA QUERIES*/
+@media only screen and (max-width: 1996px) {
+
+    .mobilemenu-cont {
+       display: none;
+    }
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .mobilemenu-cont {
+        display: flex;
+    }
+
+    .mobilemenu-cont:hover .flex-menu-content {display: flex; flex-direction: row;}
+
+}
+
+@media only screen and (max-width: 570px) {
+
+    .mobilemenu-cont {
+        display: flex;
+    }
+
+    .mobilemenu-cont:hover .flex-menu-content {display: inline-block;}
+
+    .flex-menu-content {
+        position: absolute;
+        min-width: 180px;
+    }
+
+    .flex-menu-content a {
+        padding: 11px 14px;
+        border-top: #5b164d1a solid 1px;
+        border-bottom: #5b164d1a solid 1px;
+    }
+    
+}
