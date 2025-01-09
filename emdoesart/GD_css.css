@@ -1,0 +1,29 @@
+/* CSS specifically for the Graphic Design page until I learn JavaScript */
+.container1 {
+    display: flex;
+}
+
+.container2 {
+    display: flex;
+}
+
+.container3 {
+    display: flex;
+}
+
+.language-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.image {
+    flex-basis: 20%;
+}
+
+img {
+    flex-basis: 20%;
+    width: 80%;
+    height:  auto;
+    margin-right: 15px;
+    vertical-align: top;
+}
